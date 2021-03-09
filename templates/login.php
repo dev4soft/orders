@@ -8,7 +8,7 @@
     <form action="/auth" method="post">
         логин:<br />
         <select name="login" class="inp" value="" required />
-        <option value="123">123</option>
+        <option value="">выберите пользователя</option>
         <?php
             foreach ($list_users as $user) {
                 echo '<option value="' . $user['login'] . '">' . $user['login'] . '</option>';

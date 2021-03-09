@@ -16,7 +16,7 @@ Class Form
         return $this
                 ->container
                 ->view
-                ->render($response, 'menu.html');
+                ->render($response, 'index.php');
     }
 
 }

@@ -25,5 +25,12 @@ Class Login
         return $response->withRedirect('/', 301);
     }
 
+    public function Logout($request, $response)
+    {
+        $this->container->session->auth = '';
+        $this->container->session->user_login = '';
+
+        return $response->withRedirect('/', 301);
+    }
 }
 

@@ -34,6 +34,9 @@ $container['session'] = function() {
 
 $app->group('', function () {
     $this->get('/', '\Orders\Controllers\Form:Index');
+
+    $this->get('/logout', '\Orders\Controllers\Login:Logout');
+
 })->add(new \Orders\Auth($container));
 
 $app->post('/auth', '\Orders\Controllers\Login:Check');

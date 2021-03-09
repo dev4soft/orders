@@ -6,9 +6,7 @@
 </head>
 <body>
 
-<div><a href="/add"><button class="btn">добавить</button></a></div>
-<div><a href="/history"><button class="btn">история</button></a></div>
-<div><a href="/exchange"><button class="btn">обмен</button></a></div>
+<div><a href="/logout"><button class="btn">выйти</button></a></div>
 
 </body>
 </html>

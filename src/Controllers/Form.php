@@ -13,10 +13,12 @@ Class Form
 
     public function Index($request, $response)
     {
+        $orders = new \Orders\Models\Orders($this->container);
+
         return $this
                 ->container
                 ->view
-                ->render($response, 'index.php');
+                ->render($response, 'index.php', ['list_orders' => $orders->getList()]);
     }
 
 }
